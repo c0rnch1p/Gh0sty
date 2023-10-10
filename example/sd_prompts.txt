@@ -1,0 +1,235 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STABLE DIFFUSION PROMPTING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A dictionary would suffice as a universal tool to master prompting for any text input based model.
+There are quirks to Stable Diffusion prompting that an give even more control over various aspects
+of the image. SD uses a tokenization system like OpenAI, for both services, the structure of the
+prompt down to the position of an individual character has an effect on the output, as well as the
+total token count, using correct prompt formatting is cheaper.
+
+Braces and double braces are used to emphasise detail within context and also indicate isolation or
+subcontext, additional braces increase contextual detail. Square brackets work the same way but
+indicate negative context having the opposite effect. Commas are delimiters that parse contextual
+elements. Float ratios (and element position) provide a means to weight certain elements over
+others, anything above 1.0 is treated with more importance.
+
+For people prompting on a budget, the best way to get around the cost is to be more specific and
+prepare prompts before entering them. What ends up costing the most is needing to enter the same
+prompt excessively to produce a single result, using keywords and correctly structuring inputs
+increases accuracy and saves time. Understanding visual principles is essential regardless of
+anything to do with AI and prompting.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IMAGE PROPERTIES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        PHYSICAL & TEMPORAL
+            aspect ratio               : Ratio of the width to the height (16:9, 4:3).
+            dimensions                 : Width and height of the image in pixels or other units.
+            exposure time              : How long the sensor was exposed to light (shutter speed).
+            motion blur                : Blurring of moving subjects from shutter speed or panning.
+            resolution                 : Refers to number of pixels in an image (1080p, 4K, 8K).
+ 
+        COLOR & TONALITY
+            brightness                 : Overall lightness or darkness of the image.
+            color depth                : Bits used to represent the color of a pixel.
+            color space/model          : Refers to the color formats RGB, CMYK & LAB.
+            contrast                   : Difference between darkest and lightest points.
+            hue                        : Actual color (red, blue, yellow).
+            saturation                 : Intensity or purity of colors.
+            white balance              : How natural or fake the image looks.
+ 
+        TEXTURE & DETAIL
+            bokeh                      : Quality of blur in out-of-focus areas.
+            lighting                   : Direction, quality, and color of light.
+            mood                       : Emotion or feeling conveyed by the image.
+            noise/grain                : Random variations of color information.
+            sharpness                  : The clarity of detail in an image.
+            symmetry                   : Balance in the composition.
+            texture                    : Perceived surface quality.
+
+        CONTENT & COMPOSITION
+            foreground/background      : Elements in front of or behind the main subject.
+            framing                    : How subjects are positioned within the image boundaries.
+            perspective                : Angle or method by which the images scene is captured.
+            rule of thirds             : Guideline dividing the image into nine equal parts.
+            subject                    : Main focus or topic of the image.
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PROMPT KEYWORDS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+        QUALITY TAGS
+            award winning              : Piece of work that has won an award.
+            blender                    : Open-source 3D game and graphics software.
+            masterpiece                : An artists best or most renowned work.
+            official art               : Images identified as official art.
+            top/best quality           : Highest possible overall quality.
+            trending on example.com    : Images trending somewhere.
+            unity                      : Cross platform game engine.
+            unreal engine              : 3D simulation engine.
+ 
+        KEY ADJECTIVES
+            ambient                    : Of environment or atmosphere.
+            aesthetic                  : About beauty appreciation.
+            beautiful                  : Pleasing aesthetically.
+            captivating                : Holds attention, enchanting.
+            detailed                   : Showing a lot of tiny parts.
+            elaborate                  : Detailed and thorough.
+            elegant                    : Beautiful in a graceful way.
+            ethereal                   : Extremely delicate, otherworldly.
+            gorgeous                   : Stunningly beautiful.
+            intricate                  : Detailed or complex design.
+            powerful                   : Strong visual or emotional effect.
+            striking                   : Draws attention; unusual.
+            vibrant                    : Full of energy and life.
+            dynamic                    : Changing forces, not static.
+
+        FURTHER IMAGING
+            absurdres                  : Extremely high quality res.
+            cctv                       : Surveillance cameras.
+            cinematic illumination     : Film-inspired lighting.
+            cropped                    : Background trimmed to subject.
+            dark ambiance              : Low light, somber mood.
+            fish-eye                   : Wide-angle spherical image.
+            gopro                      : Compact action camera.
+            hdr                        : High Dynamic (light) Range.
+            highres                    : High quality resolution.
+            monochrome                 : One color or shades of one color.
+            octane render              : Real-time render engine.
+            panorama                   : Wide view of landscape or scenery.
+            photorealism               : Mimics real-life imagery.
+            polaroid                   : Instant average quality photos.
+            precise depiction          : Emphasizes precision.
+            professional photograph    : High-quality photo.
+            sharp focus                : Clear, crisp detail.
+            stockphoto                 : Royalty-free professional photos.
+            studio lighting            : Controlled indoor lighting.
+            telephoto                  : Magnifies distant subjects.
+            tilt shift                 : Selective focus; miniature effect.
+            volumetric lighting        : Produces beams, glows.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PROJECT IDEAS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+        ART STYLES
+            3d sculpture               : Art from shaping materials.
+            anime                      : Japanese animation style.
+            canvas painting            : Paints on canvas.
+            cartoon                    : Simplified, exaggerated style.
+            color splash               : Accentuated colors.
+            comic                      : Narratives with illustrations and text.
+            concept art                : Visual representation of ideas.
+            etching                    : Image incised into surface with acid.
+            fractal                    : Infinite geometric patterns.
+            graffiti                   : Art on public walls or surfaces.
+            manga                      : Japanese comic books.
+            matte painting             : Illusory landscapes or scenes.
+            oil painting               : Pigments bound in oil.
+            pixel art                  : Pixel level art.
+            pop art                    : Uses popular/commercial culture.
+            sketch                     : Rough drawing of main features.
+            watercolor                 : Paints dissolved in water.
+ 
+        SIGNATURE ARTISTS
+            alphonse mucha             : Czech Art Nouveau artist.
+            andy warhol                : American Pop Art leader.
+            artgerm                    : Alias of Stanley Lau, digital artist.
+            banksy                     : English street artist.
+            claude monet               : Impressionist movement founder.
+            greg rutkowski             : Fantasy digital artist.
+            jean-michel basquiat       : American neo-expressionist.
+            johannes vermeer           : Known for "Girl with a Pearl Earring".
+            john singer sargent        : American portrait artist.
+            leonardo da'vinci          : "Mona Lisa" Renaissance artist.
+            pablo picasso              : Spanish painter, Cubist co-founder.
+            salvador dali              : Spanish surrealist.
+            vincent van gogh           : Known for "Starry Night".
+ 
+        SUBJECT IDEAS
+            animal                     : Non-plant living organism.
+            archviz                    : Architectural visualization.
+            building                   : Constructed edifice.
+            cartoon                    : Art with exaggerated features.
+            closeup                    : View taken at close range.
+            cyberpunk                  : Futuristic, tech and societal decay.
+            fashion                    : Clothing, accessories trends.
+            landscape                  : Inland natural scenery depiction.
+            portrait                   : Depicts a person.
+            postapocalypse             : World post-catastrophe.
+            schematic                  : Simplified diagram.
+            space                      : Beyond Earths atmosphere.
+            sprite                     : 2D image or animation in a scene.
+            steampunk                  : Historical with anachronistic tech.
+            vehicle                    : Cars, planes, ships.
+            sci-fi                     : Futuristic science and technology.
+            fantasy                    : Magical and otherworldly themes.
+            face                       : Facial features of a subject.
+            pose                       : Position or attitude of a subject.
+            character                  : Representation of an individual.
+            scene                      : Depiction of a specific setting or event.
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EXAMPLE BREAKDOWN
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+OPERATORS
+  ▸ Comma space (, ): element separation delimiter
+  ▸ Single braces ((element)): contextual element/s to include
+  ▸ Single brackets [[element]]: contextual element/s to exclude
+  ▸ Multiple braces (((element))): detail of the element/s
+  ▸ Multiple brackets [[[element]]]: inverse detail of excluded element/s
+  ▸ Float ratio (element:1.1): importance of the element/s (reposition)
+ 
+ORDER OF CONTEXT
+ 1. Quality Tags
+ 2. Imageing Styles
+ 3. Image Contents
+ 4. Negative Prompts 
+
+Its easiest to extend these prompts to their full length to see exactly how theyre working. The
+following prompts will generate a high quality fantasy art image of a lady holding daggers. The
+first prompt is categorizing elements into the four context forms above, using braces to indicate
+the context. The first thing to look for is whats missing or obscured within the content and then
+which tags, styles or other contents require more attention.
+
+The second prompt extends upon the first by prioritizing the "full body" element in the image
+contents section, and the "bad hands" element in the negative prompts section. Adding weight to
+their importance addresses the issue of them being obscured. The third prompt extends upon the
+second by emphasizing detail to the "masterpiece" element in the quality tags section, and the
+"highres" element in the styles section, which will now look even better.
+
+ELEMENTS WITH CONTEXT
+
+(masterpiece, official art), (highres, fantasy art, 3D portrait, cinematic illumination), (full \
+body, beautiful elegant lady, bloody daggers, striking facial expression, elaborate attire, \
+powerful presence), [bad face, bad hands]
+
+ELEMENTS WITH CONTEXTUAL IMPORTANCE
+
+(masterpiece, official art), (highres, fantasy art, 3D portrait, cinematic illumination), (full \
+body:1.1, beautiful elegant lady, bloody daggers, striking facial expression, elaborate attire, \
+powerful presence), [bad face, bad hands:1.1]
+
+ELEMENTS WITH CONTEXTUAL IMPORTANCE AND DETAIL
+
+(((masterpiece)), official art), (((highres)), fantasy art, 3D portrait, cinematic illumination), \
+(full body:1.1, beautiful elegant lady, bloody daggers, striking facial expression, elaborate \
+attire, powerful presence), [bad face, bad hands:1.1]
+
+MORE SIMPLE EXAMPLES WITH NO ELEMENT PRIORITIZATION
+
+A girl just chillin:
+
+((masterpiece), high quality), ((highres), 3D portrait, rough neighbourhood, realism), (close-up,\
+beautiful lady, sitting down, bodega, graffiti, warm atmosphere), [bad face, bad hands, no weed]
+
+Sci-fi baseball bat girl:
+
+((masterpiece), unreal engine), ((highres), 3D portrait, sci-fi art, realism), (full body,\
+beautiful lady, (baseball bat), striking facial expression, stylish outfit, city street),\
+[bad face, bad hands]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
