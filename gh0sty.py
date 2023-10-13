@@ -39,9 +39,9 @@ sys.stdout=sys.__stdout__
 # token: text block which can be either a word, split word or char
 
 lang='en' # tts language
-sys.stdout=open(os.devnull, 'w') # current musicgen link
-client=Client('https://facebook-musicgen.hf.space/')
-sys.stdout=sys.__stdout__
+#sys.stdout=open(os.devnull, 'w') # current musicgen link
+#client=Client('https://facebook-musicgen.hf.space/')
+#sys.stdout=sys.__stdout__
 
 # for this chatbot to work a file called openai-api-key containing a valid
 # openai api key needs to exist in this directory, and for stable diffusion
@@ -155,7 +155,7 @@ def printKeywords():
 	print('▸'+BOLD+WHITE+' <keywords-|kw-|k-> '+RESET+'show this message')
 	print('▸'+BOLD+WHITE+' <reload-|rl-|r-> '+RESET+'kill response and reset')
 	print('▸'+BOLD+WHITE+' <image-|ig-|i-> '+RESET+'text to image (Stable Diffusion)')
-	print('▸'+BOLD+WHITE+' <music-|mc-|m-> '+RESET+'text to audio (MusicGen)')
+	#print('▸'+BOLD+WHITE+' <music-|mc-|m-> '+RESET+'text to audio (MusicGen)')
 	print('▸'+BOLD+WHITE+' <cancel-|rc-|c-> '+RESET+'return to text chat')
 
 def genResponse(tempText, presets, gptParams, responseLck, interrupt, result):
@@ -335,8 +335,8 @@ def main():
 			interrupt=reloadChat(responseLck, interrupt, presets, originalPresets)
 		elif usrInput.lower() in ['image-', 'ig-', 'i-']:
 			genSDImg(sdParams)
-		elif usrInput.lower() in ['music-', 'mc-', 'm-']:
-			genMusic()
+		#elif usrInput.lower() in ['music-', 'mc-', 'm-']:
+			#genMusic()
 		else:
 			with responseLck:
 				interrupt=False
