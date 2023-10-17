@@ -11,12 +11,12 @@
 • Stable Diffusion: https://stablediffusionapi.com
 ##### Description
 Gh0sty is a CLI chatbot that uses OpenAI, Stable Diffusion and MusicGen to generate
-responses. Shes designed with effortlessness in mind and can be put to extensive use,
-with the sacrifice of significantly longer API call times than the web interfaces for the
+responses. Shes designed with effortlessness in mind and can be put to extensive use, with
+the sacrifice of significantly longer API call times than the web interfaces for the
 services mentioned (at standard connection speeds). The quality of the response content
-itself isnt affected by the fact that the call is being made locally, which is great.
-Text to speech (gTTS) is enabled by default and responses are spoken in a tolerable
-voice. A keyword system is used for basic controls and navigation between ChatGPT, Stable
+itself isnt affected by the fact that the call is being made locally, which is great. Text
+to speech (gTTS) is enabled by default and responses are spoken in a tolerable voice. A
+keyword system is used for basic controls and navigation between ChatGPT, Stable
 Diffusion, MusicGen, exiting and reloading etc.
 ## 
 #### Installation
@@ -25,9 +25,9 @@ Diffusion, MusicGen, exiting and reloading etc.
 • mpv: Free and open source media player  
 • python-colorama: Cross platform colored terminal text  
 • python-gradio-client: UI generation library for machine learning models  
-• python-gtts: Google Text-to-Speech API wrapper  
+• python-gtts: Google text to speech API wrapper  
 • python-mpv: Python bindings for the mpv media player  
-• python-openai: Python library for interfacing with OpenAIs language models  
+• python-openai: Python library for interfacing with OpenAI language models  
 • python-pydub: Audio processing library for Python  
 • python-pygame: Python library for game development  
 • python-termcolor: Cross platform colored terminal text  
@@ -42,10 +42,10 @@ git clone 'https://gitlab.com/c0rNCh1p/gh0sty.git'
 Go grab git bash if not installed 'https://git-scm.com/download/win.'
 Open Git Bash and follow steps for MacOS and Linux.
 ##### API Keys
-To put this chatbot to full use, valid API key for OpenAI and Stable Diffusion are
-needed. These keys should be saved in files named 'stable_diffusion_api_key' and
-'openai_api_key' in the program directory. When the install.sh script is run it will copy
-the keys over to the install directory with the code:
+To put this chatbot to full use, valid API key for OpenAI and Stable Diffusion are needed.
+These keys should be saved in files named 'stable_diffusion_api_key' and 'openai_api_key'
+in the program directory. When the install.sh script is run it will copy the keys over to
+the install directory with the code:
 ```shell
 echo 'sk_abcdefg123456789' >'gh0sty/keys/openai_api_key'
 echo 'abcdefg123456789' >'gh0sty/keys/stable_diffusion_api_key'
