@@ -61,14 +61,16 @@ chmod 764 'install.sh'
 #### Usage
 ## 
 ##### Keywords
-The chatbot uses keywords for actions and navigation between the different services. These
-are the defined keywords:  
-• <exit-|ex-|e-> leave the chat  
-• <keywords-|kw-|k-> show this message  
-• <reload-|rl-|r-> kill response and reset  
-• <image-|ig-|i-> text to image (Stable Diffusion)  
-• <music-|mc-|m-> text to audio (MusicGen)  
-• <cancel-|rc-|c-> return to text chat
+Gh0sty uses keywords for actions and navigation between the different services. These
+are the defined keywords:
+```shell
+<exit-|ex-|e-> leave the chat  
+<keywords-|kw-|k-> show this message  
+<reload-|rl-|r-> kill response and reset  
+<image-|ig-|i-> text to image (Stable Diffusion)  
+<music-|mc-|m-> text to audio (MusicGen)  
+<cancel-|rc-|c-> return to text chat
+```
 ##### Configuration
 The main source file gh0sty.py contains configuration settings at the beginning of the
 file for Chat GPT and Stable Diffusion response generation. Fine tuning and training can
