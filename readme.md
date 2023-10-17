@@ -2,13 +2,13 @@
 #### General
 ## 
 #### Details
-▸ Size: 7.4M  
-▸ Arch: x86_64  
-▸ Vers: v01.01.01
+• Size: 7.4M  
+• Arch: x86_64  
+• Vers: v01.01.01
 ##### Weblinks
-▸ MusicGen: https://facebook-musicgen.hf.space/  
-▸ OpenAI: https://openai.com  
-▸ Stable Diffusion: https://stablediffusionapi.com
+• MusicGen: https://facebook-musicgen.hf.space/  
+• OpenAI: https://openai.com  
+• Stable Diffusion: https://stablediffusionapi.com
 ##### Description
 Gh0sty is a CLI chatbot that uses OpenAI, Stable Diffusion and MusicGen to generate
 responses. Shes designed with effortlessness in mind and can be put to extensive use,
@@ -22,16 +22,16 @@ Diffusion, MusicGen, exiting and reloading etc.
 #### Installation
 ## 
 ##### Depends
-▸ mpv: Free and open source media player  
-▸ python-colorama: Cross platform colored terminal text  
-▸ python-gradio-client: UI generation library for machine learning models  
-▸ python-gtts: Google Text-to-Speech API wrapper  
-▸ python-mpv: Python bindings for the mpv media player  
-▸ python-openai: Python library for interfacing with OpenAIs language models  
-▸ python-pydub: Audio processing library for Python  
-▸ python-pygame: Python library for game development  
-▸ python-termcolor: Cross platform colored terminal text  
-▸ qview: Qt image viewer
+• mpv: Free and open source media player  
+• python-colorama: Cross platform colored terminal text  
+• python-gradio-client: UI generation library for machine learning models  
+• python-gtts: Google Text-to-Speech API wrapper  
+• python-mpv: Python bindings for the mpv media player  
+• python-openai: Python library for interfacing with OpenAIs language models  
+• python-pydub: Audio processing library for Python  
+• python-pygame: Python library for game development  
+• python-termcolor: Cross platform colored terminal text  
+• qview: Qt image viewer
 ##### MacOS & Linux
 Open a terminal and clone this repo:
 ```shell
