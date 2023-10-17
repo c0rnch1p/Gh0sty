@@ -15,7 +15,7 @@ responses. Shes designed with effortlessness in mind and can be put to extensive
 with the sacrifice of significantly longer API call times than the web interfaces for the
 services mentioned (at standard connection speeds). The quality of the response content
 itself isnt affected by the fact that the call is being made locally, which is great.
-Text to speech (gTTS) is enabled by default and responses are spoken aloud in a tolerable
+Text to speech (gTTS) is enabled by default and responses are spoken in a tolerable
 voice. A keyword system is used for basic controls and navigation between ChatGPT, Stable
 Diffusion, MusicGen, exiting and reloading etc.
 ## 
