@@ -6,7 +6,7 @@
 • Size: 7.4M  
 • Vers: v01.01.01
 ##### Weblinks
-• MusicGen: https://facebook-musicgen.hf.space/  
+• MusicGen: https://facebook-musicgen.hf.space/ (broken)  
 • OpenAI: https://openai.com  
 • Stable Diffusion: https://stablediffusionapi.com
 ##### Description
@@ -85,12 +85,12 @@ Text navigation actions like the left and right keys or the home and end keys to
 cursor are not supported (backspace works fine). However support for multiline input is
 provided, allowing users to enter more complex queries or code snippets as prompts. While
 the absence of traditional text editing shortcuts might limit some abilities, its easier
-to write complex prompts in a text editor and paste them into the input feild anyway.
+to write complex prompts in a text editor and paste them into the input field anyway.
 ##### No XL Prompts
 The prompt size includes the the entire session history and the preset data, so the limit
 can be reached fairly quickly after a few large prompts. The current current prompt size
 limit is approximately 120 lines if its the first prompt and no history has been built up.
 Habitually restarting the session after responses to large inputs are generated is the
-best workaround. Remebered context is nice, but also unecessary if prompts are structured
-correctly to begin with.
+best workaround. Remembered context is nice, but also unnecessary if prompts are
+structured correctly to begin with.
 ## 
