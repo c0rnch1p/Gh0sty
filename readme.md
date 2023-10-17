@@ -1,17 +1,21 @@
 ## 
 #### General
 ## 
+#### Details
+Size: 7.4M  
+Arch: x86_64  
+Vers: v01.01.01
 ##### Weblinks
 MusicGen: https://facebook-musicgen.hf.space/  
 OpenAI: https://openai.com  
 Stable Diffusion: https://stablediffusionapi.com
 ##### Description
-Gh0sty is a CLI chatbot that uses OpenAI, Stable Diffusion or MusicGen to generate
-response content. Gh0sty is designed with effortlessness in mind and it can be put
-to extensive use. A keyword system is used for basic controls and navigation between Chat
-GPT, Stable Diffusion and MusicGen. Text to speech (gTTS) is enabled by default and
-responses are read aloud in a tolerable voice. Response content is tuned to be slightly
-more interesting and humanlike than standard Chat GPT responses.
+Gh0sty is a CLI chatbot that uses OpenAI, Stable Diffusion and MusicGen to generate
+responses. Gh0sty is designed with effortlessness in mind and can be put to extensive
+use, with the sacrifice of significantly longer API call times than when using the web
+interfaces for the services mentioned. A keyword system is used for basic controls and
+navigation between ChatGPT, Stable Diffusion and MusicGen. Text to speech (gTTS) is
+enabled by default and responses are read aloud in a tolerable voice.
 ## 
 #### Installation
 ## 
