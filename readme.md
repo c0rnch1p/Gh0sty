@@ -2,8 +2,8 @@
 #### General
 ## 
 #### Details
-• Size: 7.4M  
 • Arch: x86_64  
+• Size: 7.4M  
 • Vers: v01.01.01
 ##### Weblinks
 • MusicGen: https://facebook-musicgen.hf.space/  
