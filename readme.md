@@ -43,8 +43,8 @@ Go grab git bash if not installed https://git-scm.com/download/win. Open Git Bas
 follow the steps for MacOS and Linux.
 ##### API Keys
 To put this chatbot to full use, valid API key for OpenAI and Stable Diffusion are
-needed. These keys should be saved in files named stable-diffusion-api-key and
-openai-api-key in the program directory. When the install.sh script is run it will copy
+needed. These keys should be saved in files named stable_diffusion_api_key and
+openai_api_key in the program directory. When the install.sh script is run it will copy
 the keys over to the install directory with the code:
 ```shell
 echo 'sk_abcdefg123456789' >'gh0sty/keys/openai_api_key'
