@@ -39,19 +39,19 @@ git clone 'https://github.com/c0rNCh1p/gh0sty.git' ||
 git clone 'https://gitlab.com/c0rNCh1p/gh0sty.git'
 ```
 ##### Windows
-Go grab git bash if not installed https://git-scm.com/download/win. Open Git Bash and
+Go grab git bash if not installed 'https://git-scm.com/download/win'. Open Git Bash and
 follow the steps for MacOS and Linux.
 ##### API Keys
 To put this chatbot to full use, valid API key for OpenAI and Stable Diffusion are
-needed. These keys should be saved in files named stable_diffusion_api_key and
-openai_api_key in the program directory. When the install.sh script is run it will copy
+needed. These keys should be saved in files named 'stable_diffusion_api_key' and
+'openai_api_key' in the program directory. When the install.sh script is run it will copy
 the keys over to the install directory with the code:
 ```shell
 echo 'sk_abcdefg123456789' >'gh0sty/keys/openai_api_key'
 echo 'abcdefg123456789' >'gh0sty/keys/stable_diffusion_api_key'
 ```
 ##### Building
-The install.sh script will take care of the rest of the installation:
+The 'install.sh' script will take care of the rest of the installation:
 ```shell
 cd 'gh0sty'
 chmod 764 'install.sh'
@@ -73,7 +73,7 @@ These are the defined keywords:
 ##### Configuration
 The main source file gh0sty.py contains configuration settings at the beginning of the
 file for Chat GPT and Stable Diffusion response generation. Fine tuning and training can
-be implemented via the presets.py file for further customization.
+be implemented via the 'presets.py' file for further customization.
 ## 
 #### Notes
 ## 
