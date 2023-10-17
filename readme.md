@@ -11,7 +11,7 @@ response content. Gh0sty is designed with effortlessness in mind and it can be p
 to extensive use. A keyword system is used for basic controls and navigation between Chat
 GPT, Stable Diffusion and MusicGen. Text to speech (gTTS) is enabled by default and
 responses are read aloud in a tolerable voice. Response content is tuned to be slightly
-more interesting and humanlike than standard Chat GPT responses.
+more interesting and humanlike than standard Chat GPT responses
 ## 
 #### Installation
 ## 
