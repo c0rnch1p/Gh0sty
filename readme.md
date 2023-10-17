@@ -39,8 +39,8 @@ git clone 'https://github.com/c0rNCh1p/gh0sty.git' ||
 git clone 'https://gitlab.com/c0rNCh1p/gh0sty.git'
 ```
 ##### Windows
-Go grab git bash if not installed 'https://git-scm.com/download/win'. Open Git Bash and
-follow the steps for MacOS and Linux.
+Go grab git bash if not installed https://git-scm.com/download/win.
+Open Git Bash and follow steps for MacOS and Linux.
 ##### API Keys
 To put this chatbot to full use, valid API key for OpenAI and Stable Diffusion are
 needed. These keys should be saved in files named 'stable_diffusion_api_key' and
