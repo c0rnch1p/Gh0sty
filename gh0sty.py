@@ -105,11 +105,11 @@ sdSteps='30'
 # safety checks on the generated image
 sdSafetyCheck='no'
 
-HOME=os.path.expanduser("~")
+HOME=os.path.expanduser('~')
 AUDDIR='/usr/share/gh0sty/audio/'
 IMGDIR='/usr/share/gh0sty/images/'
-RESPDIR=os.path.join(AUDDIR, 'response.mp3')
-SPEEDUP=os.path.join(AUDDIR, 'sped.mp3')
+RESPDIR='/tmp/gh0sty_response.mp3'
+SPEEDUP='/tmp/gh0sty_sped.mp3'
 SDAPIPATH='/usr/share/gh0sty/keys/stable_diffusion_api_key'
 SDAPIKEY=open(SDAPIPATH, 'r').read().strip()
 OAAPIPATH='/usr/share/gh0sty/keys/openai_api_key'
