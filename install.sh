@@ -6,6 +6,7 @@ DEPENDS=(
 	'python-gradio-client'
 	'python-gtts'
 	'python-mpv'
+	'python-openai'
 	'python-pydub'
 	'python-pygame'
 	'python-termcolor'
@@ -36,8 +37,8 @@ if [ $# -eq 0 ]; then
 			'dnf') dnf list installed "$PKG" &>'/dev/null' || sudo dnf install -y "$PKG";;
 			'pacman')
 				if [ "$PKG" == 'python-openai' ]; then
-					pacman -Q "$PKG" &>'/dev/null' || sudo pacman -S --noconfirm "$PKG"
-				else yay -Q "$PKG" &>'/dev/null' || yay -S --noconfirm "$PKG"
+					! pacman -Q "$PKG" &>'/dev/null' || sudo pacman -S --noconfirm "$PKG" &&
+						yay -Q "$PKG" &>'/dev/null' || yay -S --noconfirm "$PKG"
 				fi;;
 		esac
 	done
