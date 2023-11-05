@@ -6,7 +6,6 @@ DEPENDS=(
 	'python-gradio-client'
 	'python-gtts'
 	'python-mpv'
-	'python-openai'
 	'python-pydub'
 	'python-pygame'
 	'python-termcolor'
