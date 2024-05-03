@@ -48,13 +48,12 @@ if [ $# -eq 0 ]; then
 		pip install -q --no-color -r 'requirements.txt' #2>&1
 	else echo '⚠ pip and pipx not installed ⚠'
 	fi
-	cd .. || exit 1
-	sudo cp -r 'gh0sty/' '/usr/share/'
-	cd 'gh0sty/' || exit
+	sudo cp -r '../Gh0sty/' '/usr/share/'
 	sudo cp 'gh0sty' '/bin'
 	cp 'gh0sty' "$HOME/.local/bin"
 elif [[ "$1" =~ ^(--remove|-r|r)$ ]]; then
-	[ -d '/usr/share/gh0sty' ] && sudo rm -r '/usr/share/gh0sty'
+	[ -d '/usr/share/Gh0sty' ] && sudo rm -r '/usr/share/Gh0sty'
 	[ -e '/bin/gh0sty' ] && sudo rm '/bin/gh0sty'
-fi
+	[ -e "$HOME/.local/bin/gh0sty" ] && sudo rm "$HOME/.local/bin/gh0sty"
+fi && ./'commit.sh' 2>&1
 unset DEPENDS FLSPCS OBJECTS ADDDATA
