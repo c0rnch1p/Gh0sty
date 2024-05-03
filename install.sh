@@ -55,8 +55,9 @@ if [ $# -eq 0 ]; then
 		cat 'requirements.txt' | xargs -n 1 pipx install 2>&1
 	elif command -v pip3 >'/dev/null'; then
 		pip3 install -q 'requirements.txt' #2>&1
-	else echo '⚠ pip and pipx not installed ⚠'
+	else echo '⚠ pip, pipx or pip3 not installed ⚠'
 	fi
+
 	sudo cp -r '../Gh0sty/' '/usr/share/'
 	sudo cp 'gh0sty' '/bin'
 	cp 'gh0sty' "$HOME/.local/bin"
