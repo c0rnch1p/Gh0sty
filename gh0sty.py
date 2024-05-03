@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from colorama import Fore, Style
-from gradio_client import Client
+#from gradio_client import Client
 from gtts import gTTS
 from presets import presets
 from pydub import AudioSegment
@@ -8,7 +8,7 @@ from termcolor import colored
 from tqdm import tqdm
 import atexit
 import glob
-import huggingface_hub
+#import huggingface_hub
 import io
 import json
 import mpv
@@ -40,9 +40,9 @@ sys.stdout=sys.__stdout__
 # token: text block which can be either a word, split word or char
 
 lang='en' # tts language
-sys.stdout=open(os.devnull, 'w') # current musicgen link
-client=Client('https://facebook-musicgen.hf.space/')
-sys.stdout=sys.__stdout__
+#sys.stdout=open(os.devnull, 'w') # current musicgen link
+#client=Client('https://facebook-musicgen.hf.space/')
+#sys.stdout=sys.__stdout__
 
 # for this chatbot to work a file called openai-api-key containing a valid
 # openai api key needs to exist in this directory, and for stable diffusion
