@@ -3,15 +3,6 @@
 
 DEPENDS=(
 	'mpv'
-	'python-colorama'
-	'python-gradio-client'
-	'python-gtts'
-	'python-huggingface-hub'
-	'python-mpv'
-	'python-openai'
-	'python-pydub'
-	'python-pygame'
-	'python-termcolor'
 	'qview'
 )
 

@@ -40,9 +40,9 @@ sys.stdout=sys.__stdout__
 # token: text block which can be either a word, split word or char
 
 lang='en' # tts language
-#sys.stdout=open(os.devnull, 'w') # current musicgen link
-#client=Client('https://facebook-musicgen.hf.space/')
-#sys.stdout=sys.__stdout__
+sys.stdout=open(os.devnull, 'w') # current musicgen link
+client=Client('https://facebook-musicgen.hf.space/')
+sys.stdout=sys.__stdout__
 
 # for this chatbot to work a file called openai-api-key containing a valid
 # openai api key needs to exist in this directory, and for stable diffusion
