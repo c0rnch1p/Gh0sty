@@ -22,6 +22,9 @@ install_pkg(){
 		'pacman')
 			if ! pacman -Q "$2" &>'/dev/null'; then
 				sudo pacman -S --noconfirm "$2"
+				if ! pacman -Q "$2" &>'/dev/null'; then
+					yay -S --noconfirm "$2"
+				fi
 			fi;;
 	esac
 }
