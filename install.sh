@@ -16,14 +16,14 @@ DEPENDS=(
 
 install_pkg(){
 	case $1 in
-		'apt') dpkg -l "$2" &>'/dev/null' || sudo apt install -y "$2" ;;
-		'yum') yum list installed "$2" &>'/dev/null' || sudo yum install -y "$2" ;;
-		'dnf') dnf list installed "$2" &>'/dev/null' || sudo dnf install -y "$2" ;;
+		'apt') dpkg -l "$2" &>'/dev/null' || sudo apt install -y "$2" 2>&1 ;;
+		'yum') yum list installed "$2" &>'/dev/null' || sudo yum install -y "$2" 2>&1 ;;
+		'dnf') dnf list installed "$2" &>'/dev/null' || sudo dnf install -y "$2" 2>&1 ;;
 		'pacman')
 			if ! pacman -Q "$2" &>'/dev/null'; then
-				sudo pacman -S --noconfirm "$2"
+				sudo pacman -S --noconfirm "$2" 2>&1
 				if ! pacman -Q "$2" &>'/dev/null'; then
-					yay -S --noconfirm "$2"
+					yay -S --noconfirm "$2" 2>&1
 				fi
 			fi;;
 	esac
