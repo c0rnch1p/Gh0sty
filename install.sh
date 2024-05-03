@@ -45,7 +45,7 @@ if [ $# -eq 0 ]; then
 
 # Uncomment below section if none of the above
 # package managers are installed on this machine,
-# or there are issues with missing packages in their
+# or there are problems with missing packages in their
 # repositories, be sure that either pip, pipx or pip3
 # are installed, there are known issues with pipx
 
