@@ -62,10 +62,10 @@ if [ $# -eq 0 ]; then
 # pip, pipx or pip3 are installed, there are known issues with
 # pipx for installing packages directly into the system
 
-#	if command -v pip >'/dev/null'; then
-#		pip install -q --no-color -r 'requirements.txt' 2>'/dev/null'
-#	else echo '⚠ pip not installed ⚠'
-#	fi
+	if command -v pip >'/dev/null'; then
+		pip install -q --no-color -r 'requirements.txt' 2>'/dev/null'
+	else echo '⚠ pip not installed ⚠'
+	fi
 #	if command -v pip3 >'/dev/null'; then
 #		pip3 install -q 'requirements.txt' 2>'/dev/null'
 #	else echo '⚠ pip3 not installed ⚠'
