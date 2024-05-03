@@ -67,11 +67,11 @@ if [ $# -eq 0 ]; then
 	else echo '⚠ pip not installed ⚠'
 	fi
 #	if command -v pip3 >'/dev/null'; then
-#		pip3 install -q 'requirements.txt' 2>'/dev/null'
+#		pip3 install -q 'requirements.txt'
 #	else echo '⚠ pip3 not installed ⚠'
 #	fi
 #	if command -v pipx >'/dev/null'; then
-#		cat 'requirements.txt' | xargs -n 1 pipx install 2>'/dev/null'
+#		cat 'requirements.txt' | xargs -n 1 pipx install
 #	else echo '⚠ pipx not installed ⚠'
 #	fi
 
