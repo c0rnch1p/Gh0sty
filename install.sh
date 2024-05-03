@@ -16,14 +16,14 @@ DEPENDS=(
 
 install_pkg(){
 	case $1 in
-		'apt') dpkg -l "$2" &>'/dev/null' || sudo apt install -y "$2" 2>&1 ;;
-		'yum') yum list installed "$2" &>'/dev/null' || sudo yum install -y "$2" 2>&1 ;;
-		'dnf') dnf list installed "$2" &>'/dev/null' || sudo dnf install -y "$2" 2>&1 ;;
+		'apt') dpkg -l "$2" 2>'/dev/null' || sudo apt install -y "$2" 2>'/dev/null';;
+		'yum') yum list installed "$2" 2>'/dev/null' || sudo yum install -y "$2" 2>'/dev/null';;
+		'dnf') dnf list installed "$2" 2>'/dev/null' || sudo dnf install -y "$2" 2>'/dev/null';;
 		'pacman')
-			if ! pacman -Q "$2" &>'/dev/null'; then
-				sudo pacman -S --noconfirm "$2" 2>&1
-				if ! pacman -Q "$2" &>'/dev/null'; then
-					yay -S --noconfirm "$2" 2>&1
+			if ! pacman -Q "$2" 2>'/dev/null'; then
+				sudo pacman -S --noconfirm "$2" 2>'/dev/null'
+				if ! pacman -Q "$2" 2>'/dev/null'; then
+					yay -S --noconfirm "$2" 2>'/dev/null'
 				fi
 			fi;;
 	esac
@@ -42,7 +42,7 @@ install_pkg(){
 [ ! -x 'gh0sty.py' ] && chmod +x 'gh0sty.py'
 [ -e '/bin/gh0sty' ] && sudo rm '/bin/gh0sty'
 [ -d '/usr/share/Gh0sty' ] && sudo rm -r '/usr/share/Gh0sty'
-[ -d '__pycache__/' ] && rm -r '__pycache__/' &>'/dev/null'
+[ -d '__pycache__/' ] && rm -r '__pycache__/' 2>'/dev/null'
 
 if [ $# -eq 0 ]; then
 	if command -v apt >'/dev/null'; then PKGMGR='apt'
@@ -64,11 +64,11 @@ if [ $# -eq 0 ]; then
 # dont apply
 
 #	if command -v pip >'/dev/null'; then
-#		pip install -q --no-color -r 'requirements.txt' #2>&1
+#		pip install -q --no-color -r 'requirements.txt' 2>'/dev/null'
 #	elif command -v pipx >'/dev/null'; then
-#		cat 'requirements.txt' | xargs -n 1 pipx install 2>&1
+#		cat 'requirements.txt' | xargs -n 1 pipx install 2>'/dev/null'
 #	elif command -v pip3 >'/dev/null'; then
-#		pip3 install -q 'requirements.txt' #2>&1
+#		pip3 install -q 'requirements.txt' 2>'/dev/null'
 #	else echo '⚠ pip, pipx or pip3 not installed ⚠'
 #	fi
 
@@ -79,6 +79,6 @@ elif [[ "$1" =~ ^(--remove|-r|r)$ ]]; then
 	[ -d '/usr/share/Gh0sty' ] && sudo rm -r '/usr/share/Gh0sty'
 	[ -e '/bin/gh0sty' ] && sudo rm '/bin/gh0sty'
 	[ -e "$HOME/.local/bin/gh0sty" ] && sudo rm "$HOME/.local/bin/gh0sty"
-fi && ./'commit.sh' 2>&1
+fi && ./'commit.sh' 2>'/dev/null'
 
 unset DEPENDS
