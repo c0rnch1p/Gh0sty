@@ -42,12 +42,12 @@ if [ $# -eq 0 ]; then
 				fi;;
 		esac
 	done
-	if command -v pipx >'/dev/null'; then
-		cat 'requirements.txt' | xargs -n 1 pipx install #2>&1
-	elif command -v pip >'/dev/null'; then
-		pip install -q --no-color -r 'requirements.txt' #2>&1
-	else echo '⚠ pip and pipx not installed ⚠'
-	fi
+#	if command -v pipx >'/dev/null'; then
+#		cat 'requirements.txt' | xargs -n 1 pipx install #2>&1
+#	elif command -v pip >'/dev/null'; then
+#		pip install -q --no-color -r 'requirements.txt' #2>&1
+#	else echo '⚠ pip and pipx not installed ⚠'
+#	fi
 	sudo cp -r '../Gh0sty/' '/usr/share/'
 	sudo cp 'gh0sty' '/bin'
 	cp 'gh0sty' "$HOME/.local/bin"
