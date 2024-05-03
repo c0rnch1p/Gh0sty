@@ -23,6 +23,7 @@ Diffusion, MusicGen, exiting and reloading etc.
 ## 
 ##### Depends
 • mpv: Free and open source media player  
+• python39: Major release 3.9 of the Python high-level programming language
 • python-colorama: Cross platform colored terminal text  
 • python-gradio-client: UI generation library for machine learning models  
 • python-gtts: Google text to speech API wrapper  
