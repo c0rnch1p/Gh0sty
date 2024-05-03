@@ -49,14 +49,14 @@ if [ $# -eq 0 ]; then
 # repositories, be sure that either pip, pipx or pip3
 # are installed, there are known issues with pipx
 
-	if command -v pip >'/dev/null'; then
-		pip install -q --no-color -r 'requirements.txt' #2>&1
-	elif command -v pipx >'/dev/null'; then
-		cat 'requirements.txt' | xargs -n 1 pipx install 2>&1
-	elif command -v pip3 >'/dev/null'; then
-		pip3 install -q 'requirements.txt' #2>&1
-	else echo '⚠ pip, pipx or pip3 not installed ⚠'
-	fi
+#	if command -v pip >'/dev/null'; then
+#		pip install -q --no-color -r 'requirements.txt' #2>&1
+#	elif command -v pipx >'/dev/null'; then
+#		cat 'requirements.txt' | xargs -n 1 pipx install 2>&1
+#	elif command -v pip3 >'/dev/null'; then
+#		pip3 install -q 'requirements.txt' #2>&1
+#	else echo '⚠ pip, pipx or pip3 not installed ⚠'
+#	fi
 
 	sudo cp -r '../Gh0sty/' '/usr/share/'
 	sudo cp 'gh0sty' '/bin'
