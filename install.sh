@@ -63,7 +63,7 @@ if [ $# -eq 0 ]; then
 # pipx for installing packages directly into the system
 
 	if command -v pip >'/dev/null'; then
-		pip install -q --no-color -r 'requirements.txt' 2>'/dev/null'
+		pip install -q --no-color -r 'requirements.txt'
 	else echo '⚠ pip not installed ⚠'
 	fi
 #	if command -v pip3 >'/dev/null'; then
