@@ -63,14 +63,14 @@ if [ $# -eq 0 ]; then
 # two liens concerning pipx can be left commented out if they
 # dont apply
 
-#	if command -v pip >'/dev/null'; then
-#		pip install -q --no-color -r 'requirements.txt' 2>'/dev/null'
-#	elif command -v pipx >'/dev/null'; then
-#		cat 'requirements.txt' | xargs -n 1 pipx install 2>'/dev/null'
-#	elif command -v pip3 >'/dev/null'; then
-#		pip3 install -q 'requirements.txt' 2>'/dev/null'
-#	else echo '⚠ pip, pipx or pip3 not installed ⚠'
-#	fi
+	if command -v pip3 >'/dev/null'; then
+		pip3 install -q 'requirements.txt' 2>'/dev/null'
+	elif command -v pip >'/dev/null'; then
+		pip install -q --no-color -r 'requirements.txt' 2>'/dev/null'
+	elif command -v pipx >'/dev/null'; then
+		cat 'requirements.txt' | xargs -n 1 pipx install 2>'/dev/null'
+	else echo '⚠ pip, pipx or pip3 not installed ⚠'
+	fi
 
 	sudo cp -r '../Gh0sty/' '/usr/share/'
 	sudo cp 'gh0sty' '/bin'
