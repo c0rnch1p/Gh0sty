@@ -106,13 +106,13 @@ sdSteps='30'
 sdSafetyCheck='no'
 
 HOME=os.path.expanduser('~')
-AUDDIR='/usr/share/gh0sty/audio/'
-IMGDIR='/usr/share/gh0sty/images/'
+AUDDIR='/usr/share/Gh0sty/audio/'
+IMGDIR='/usr/share/Gh0sty/images/'
 RESPDIR='/tmp/gh0sty_response.mp3'
 SPEEDUP='/tmp/gh0sty_sped.mp3'
-SDAPIPATH='/usr/share/gh0sty/keys/stable_diffusion_api_key'
+SDAPIPATH='/usr/share/Gh0sty/keys/stable_diffusion_api_key'
 SDAPIKEY=open(SDAPIPATH, 'r').read().strip()
-OAAPIPATH='/usr/share/gh0sty/keys/openai_api_key'
+OAAPIPATH='/usr/share/Gh0sty/keys/openai_api_key'
 OAAPIKEY=open(OAAPIPATH, 'r').read().strip()
 openai.api_key=OAAPIKEY
 
