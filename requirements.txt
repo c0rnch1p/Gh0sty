@@ -1,7 +1,7 @@
 colorama
 gradio_client
 gtts
-huggingface-hub
+huggingface_hub
 mpv
 openai
 pydub
