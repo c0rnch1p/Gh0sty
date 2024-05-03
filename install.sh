@@ -15,7 +15,7 @@ DEPENDS=(
 [ ! -x 'gh0sty' ] && chmod +x 'gh0sty'
 [ ! -x 'gh0sty.py' ] && chmod +x 'gh0sty.py'
 [ -e '/bin/gh0sty' ] && sudo rm '/bin/gh0sty'
-[ -d '/usr/share/gh0sty' ] && sudo rm -r '/usr/share/gh0sty'
+[ -d '/usr/share/Gh0sty' ] && sudo rm -r '/usr/share/Gh0sty'
 [ -d '__pycache__/' ] && rm -r '__pycache__/' &>'/dev/null'
 for FL in "${OBJECTS[@]}"; do
 	if [[ -e "$FL" && ! -x "$FL" ]]; then
