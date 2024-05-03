@@ -7,7 +7,7 @@ from termcolor import colored
 from tqdm import tqdm
 import atexit
 import glob
-import gradio_client
+from gradio_client.client import Client
 import huggingface_hub
 import io
 import json
