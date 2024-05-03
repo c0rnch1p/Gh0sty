@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from colorama import Fore, Style
+from gradio_client import Client
 from gtts import gTTS
 from presets import presets
 from pydub import AudioSegment
@@ -7,7 +8,6 @@ from termcolor import colored
 from tqdm import tqdm
 import atexit
 import glob
-from gradio_client.client import Client
 import huggingface_hub
 import io
 import json
