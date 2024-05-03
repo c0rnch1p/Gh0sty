@@ -8,6 +8,7 @@ from termcolor import colored
 from tqdm import tqdm
 import atexit
 import glob
+import huggingface_hub
 import io
 import json
 import mpv

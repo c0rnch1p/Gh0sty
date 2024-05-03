@@ -1,9 +1,9 @@
 colorama
 gradio_client
 gtts
+huggingface-hub
 mpv
 openai
 pydub
 pygame
 termcolor
-tqdm
